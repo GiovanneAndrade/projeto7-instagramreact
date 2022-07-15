@@ -14,19 +14,26 @@ function MenuStores(props) {
 
 export default function Stores(){
    
+
+    const NovoImgLegenda = [
+        {legenda: "9gag", img: "./image/9gag1.png"},
+        {legenda: "meowed", img: "./image/meowed4.png"},
+        {legenda: "barked", img: "./image/barked1.png"},
+        {legenda: "nathanwpyle", img: "./image/fotoooa.jpg"},
+        {legenda: "wawawiwac", img: "./image/wawawiwacomicsa1.png"},
+        {legenda: "respondeai", img: "./image/respondeai1.png"},
+        {legenda: "filomoderna", img: "./image/filomoderna.png"},
+        {legenda: "memeriago", img: "./image/memeriagourmet1.png"},
+    ];
+
+     
+
     return (         
         <div class="stores">
 
-<  CgChevronRightO className="iconStores"/>
+         <  CgChevronRightO className="iconStores"/>
 
-           <MenuStores legenda= "9gag" img="./image/9gag1.png"/>
-           <MenuStores legenda= "meowed" img="./image/meowed4.png"/>
-           <MenuStores legenda= "barked" img="./image/barked1.png"/>
-           <MenuStores legenda= "nathanwpyle" img="./image/fotoooa.jpg"/>
-           <MenuStores legenda= "wawawiwac" img="./image/wawawiwacomicsa1.png"/>
-           <MenuStores legenda= "respondeai" img="./image/respondeai1.png"/>
-           <MenuStores legenda= "filomoderna" img="./image/filomoderna.png"/>
-           <MenuStores legenda= "memeriago" img="./image/memeriagourmet1.png"/>
+         { NovoImgLegenda.map(item => <MenuStores legenda={item.legenda} img={item.img} />) }
            
         </div>
                 

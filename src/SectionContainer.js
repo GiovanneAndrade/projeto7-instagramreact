@@ -53,6 +53,25 @@ function Section  (props) { return (
 )}
 
 function SectionContainer (){
+
+     const ArraySeletionButtom = [
+        {legenda: "meowed", img: "./image/meowed4.png", icon: <AiOutlineEllipsis/>, gato:"./image/cat.png",
+         AiOutlineHeart:<AiOutlineHeart/>, 
+        MdOutlineChatBubbleOutline:<MdOutlineChatBubbleOutline/>, IoMdPaperPlane:<IoMdPaperPlane/>,
+         comentario:"./image/respondeai.png", coment:"Curtido por",
+        coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",}, 
+        {legenda: "meowed", img: "./image/meowed4.png", icon: <AiOutlineEllipsis/>, gato:"./image/cat.png",
+         AiOutlineHeart:<AiOutlineHeart/>, 
+        MdOutlineChatBubbleOutline:<MdOutlineChatBubbleOutline/>, IoMdPaperPlane:<IoMdPaperPlane/>,
+         comentario:"./image/respondeai.png", coment:"Curtido por",
+        coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",},
+        {legenda: "meowed", img: "./image/meowed4.png", icon: <AiOutlineEllipsis/>, gato:"./image/cat.png",
+         AiOutlineHeart:<AiOutlineHeart/>, 
+        MdOutlineChatBubbleOutline:<MdOutlineChatBubbleOutline/>, IoMdPaperPlane:<IoMdPaperPlane/>,
+         comentario:"./image/respondeai.png", coment:"Curtido por",
+        coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",}
+     ]
+
   return (
         <div class="section-container">
         
@@ -63,25 +82,9 @@ function SectionContainer (){
                 </div>
 
                 <div class="section-buttom">
-                
-                   <Section legenda="meowed" img="./image/meowed4.png"  
-                   icon = {<AiOutlineEllipsis/>} gato="./image/cat.png" 
-                   AiOutlineHeart= {<AiOutlineHeart/>} MdOutlineChatBubbleOutline= {<MdOutlineChatBubbleOutline/>}
-                   IoMdPaperPlane={<IoMdPaperPlane/>} comentario="./image/respondeai.png" coment="Curtido por"
-                   coment1="respondeai" coment2="e" coment3="outras 101.523 pessoas"/>
-
-                   <Section legenda="meowed" img="./image/meowed4.png"  
-                   icon = {<AiOutlineEllipsis/>} gato="./image/cat.png" 
-                   AiOutlineHeart= {<AiOutlineHeart/>} MdOutlineChatBubbleOutline= {<MdOutlineChatBubbleOutline/>}
-                   IoMdPaperPlane={<IoMdPaperPlane/>} comentario="./image/respondeai.png" coment="Curtido por"
-                   coment1="respondeai" coment2="e" coment3="outras 101.523 pessoas"/>
-
-                   <Section legenda="meowed" img="./image/meowed4.png"  
-                   icon = {<AiOutlineEllipsis/>} gato="./image/cat.png" 
-                   AiOutlineHeart= {<AiOutlineHeart/>} MdOutlineChatBubbleOutline= {<MdOutlineChatBubbleOutline/>}
-                   IoMdPaperPlane={<IoMdPaperPlane/>} comentario="./image/respondeai.png" coment="Curtido por"
-                   coment1="respondeai" coment2="e" coment3="outras 101.523 pessoas"/>
-
+                   {ArraySeletionButtom.map(item => <Section legenda={item.legenda} img={item.img} 
+                   icon={item.icon} gato={item.gato} AiOutlineHeart={item.AiOutlineHeart} MdOutlineChatBubbleOutline={item.MdOutlineChatBubbleOutline} IoMdPaperPlane={item.IoMdPaperPlane}
+                   comentario={item.comentario} coment={item.coment} coment2={item.coment2} coment3={item.coment3} />)}
 
                 </div>
 

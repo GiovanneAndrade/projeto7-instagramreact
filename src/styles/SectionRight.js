@@ -21,6 +21,15 @@ function SeletionR (props) {return(
     )}
 
 function SectionRight () {  
+
+    const ArraySeletionRight = [
+        {images: "./image/badvibesmemes.png", texto: "", texto1: "bad.vibes.memes", testo2: "Segue você",testo3:"Seguir"},
+        {images: "./image/chibirdart.png", texto: "", texto1: "chibirdart", testo2: "Segue você",testo3:"Seguir"},
+        {images: "./image/razoesparaacreditar.png", texto: "", texto1: "razoesparaacreditar", testo2: "Segue você",testo3:"Seguir"},
+        {images: "./image/adorableanimals1.png", texto: "", texto1: "adorable_animals", testo2: "Segue você",testo3:"Seguir"},
+        {images: "./image/smallcutecats.png", texto: "", texto1: "smallcutecats", testo2: "Segue você",testo3:"Seguir"},
+    ]
+
   return (
         <div class="section-right"> 
             <div class="catana">
