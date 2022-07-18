@@ -64,16 +64,14 @@ function SectionContainer (){
     
     
       const ArraySeletionButtom = [
-         {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,
-            
+         {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,  
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
-          comentario:"./image/respondeai.png", coment:"Curtido por",
-         coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",}, 
+          comentario:"./image/respondeai.png", coment:"Curtido por", coment1:"respondeai", coment2:"e", coment3:"outras 101.523 pessoas"}, 
          {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,
           AiOutlineHeart:<AiFillHeart  />, 
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
           comentario:"./image/respondeai.png", coment:"Curtido por",
-         coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",}, 
+         coment1:"respondeai", coment2:"gatosPets", coment3:"outras 101.523 pessoas",}, 
          {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,
           AiOutlineHeart:<AiFillHeart  />, 
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
@@ -92,7 +90,7 @@ function SectionContainer (){
                 <div class="section-buttom">
                     {ArraySeletionButtom.map(item => <Section legenda={item.legenda} img={item.img} 
                     icon={item.icon} gato={item.gato} AiOutlineHeart={item.AiOutlineHeart } MdOutlineChatBubbleOutline={item.MdOutlineChatBubbleOutline} IoMdPaperPlane={item.IoMdPaperPlane}
-                    comentario={item.comentario} coment={item.coment} coment2={item.coment2} coment3={item.coment3} />)}
+                    comentario={item.comentario} coment={item.coment} coment1={item.coment1} coment2={item.coment2} coment3={item.coment3} />)}
 
                 </div>
             </div>
