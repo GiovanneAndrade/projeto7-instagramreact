@@ -32,7 +32,7 @@ export default function Stores(){
         <div class="stores">
 
          <  CgChevronRightO className="iconStores"/>
-
+          
          { NovoImgLegenda.map(item => <MenuStores legenda={item.legenda} img={item.img} />) }
            
         </div>

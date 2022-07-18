@@ -109,7 +109,7 @@ body{
      color: #000000;
      font-size: 18px;
      
-     
+     cursor: pointer;
      
  }
 
@@ -249,22 +249,23 @@ padding-right: 18.5px;
 }
 .foto-gato{
     width: 614px;
+    cursor: pointer;
 }
 .icon-icon2{
    display: flex;
    align-items: flex-start;
    padding: 3.44px 0 0 17.75px;
-
+cursor: pointer;
 }
 .icon-icon2 ion-icon{
     font-size: 18px;
     padding: 2.75px;
-    
+    cursor: pointer;
     
 }
 .base-foto{
     display: flex; 
-  
+    
     justify-content: space-between;
     flex-direction: column;
 }
@@ -351,7 +352,7 @@ padding-right: 18.5px;
     display: flex;
     align-items: center;
     padding-left: 0px;
-    padding-top: 18px;
+   /*  padding-top: 18px; */
 }
 .paragrafo{
     color: #C7C7C7;
@@ -365,6 +366,17 @@ padding-right: 18.5px;
 }
 .menu-base{
     display: none;
+}
+.section-buttom .vermelho{
+    color: red;
+    margin-top: 3px;
+    font-size: 20px;
+}
+.BsHeart{
+    
+    color: black;
+    font-size: 20px;
+    margin-top: 3px;
 }
 
 @media(max-width: 935px) {

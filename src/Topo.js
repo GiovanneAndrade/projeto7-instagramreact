@@ -1,11 +1,4 @@
-import {FiInstagram} from 'react-icons/fi';
-import {IoMdPaperPlane} from 'react-icons/io';
-import  {AiOutlineCompass, AiOutlineHeart} from 'react-icons/ai';
-import {BsPerson} from 'react-icons/bs';
- 
 
-
- 
 function Topo  (){
 return(
  
@@ -13,7 +6,7 @@ return(
         <div class="sub-header">
 
             <div class="nav">
-                <FiInstagram/>
+            <ion-icon name="logo-instagram"></ion-icon>
                 <div class="borda"></div>
                 <img src="./image/logo1.png" class="logo" alt=""/>
             </div>
@@ -23,10 +16,10 @@ return(
 
             <div class="nav-pt3">
                
-                       <IoMdPaperPlane/>        
-                       <AiOutlineCompass/>
-                      <AiOutlineHeart/>
-                      <BsPerson/>
+                <ion-icon name="paper-plane-outline" class="icon"></ion-icon>               
+                <ion-icon name="compass-outline" class="icon"></ion-icon>
+                <ion-icon name="heart-outline" class="icon"></ion-icon>
+                <ion-icon name="person-outline" class="icon"></ion-icon>
             </div>
         </div>
     </div>
