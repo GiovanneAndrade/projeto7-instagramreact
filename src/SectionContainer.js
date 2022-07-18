@@ -3,7 +3,7 @@ import Stores from "./Stores"
 import SectionRight from "./styles/SectionRight"
 import {HiOutlineBookmark} from 'react-icons/hi';
 import {AiFillHeart, } from 'react-icons/ai';
-import {BsHeart} from 'react-icons/bs';
+
 
 function Section  (props) {  
     
@@ -61,14 +61,11 @@ function Section  (props) {
 
 function SectionContainer (){
  let fotoo = "./image/cat.png"  
-    const [Valor, setValor] = React.useState("BsHeart")
+    
     
       const ArraySeletionButtom = [
          {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,
-          /* AiOutlineHeart:<AiFillHeart className={Valor} onClick={() => {
-             setValor("vermelho")
-              if (Valor === "vermelho"){ setValor("BsHeart")}
-            }}  />, */  
+            
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
           comentario:"./image/respondeai.png", coment:"Curtido por",
          coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",}, 
