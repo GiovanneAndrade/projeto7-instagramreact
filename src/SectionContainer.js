@@ -6,7 +6,8 @@ import {AiFillHeart, } from 'react-icons/ai';
 import {BsHeart} from 'react-icons/bs';
 
 function Section  (props) {  
-   
+    
+    const [Valor, setValor] = React.useState("BsHeart")
     return (
     
 
@@ -21,16 +22,22 @@ function Section  (props) {
             {props.icon}
         </div>
     </div>
-    <div class="section-buttom-base" >
-        <img class="foto-gato" src={props.gato}/>
+    <div class="section-buttom-base" onClick={() => {
+          setValor("vermelho")
+          if (Valor === "vermelho"){ setValor("BsHeart")}
+         }}>
+        <img class="foto-gato"  src={props.gato}/>
     </div>
 
     <div class="base-foto-1">
 
         <div class="base-foto" >
 
-            <div class="icon-icon2">
-               {props.AiOutlineHeart} 
+            <div class="icon-icon2" >
+            <AiFillHeart className={Valor} onClick={() => {
+             setValor("vermelho")
+              if (Valor === "vermelho"){ setValor("BsHeart")}
+            }} />
                {props.MdOutlineChatBubbleOutline}  
                {props.IoMdPaperPlane}  
                  
@@ -58,26 +65,20 @@ function SectionContainer (){
     
       const ArraySeletionButtom = [
          {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,
-          AiOutlineHeart:<AiFillHeart className={Valor} onClick={() => {
+          /* AiOutlineHeart:<AiFillHeart className={Valor} onClick={() => {
              setValor("vermelho")
               if (Valor === "vermelho"){ setValor("BsHeart")}
-            }}  />,  
+            }}  />, */  
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
           comentario:"./image/respondeai.png", coment:"Curtido por",
          coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",}, 
          {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,
-          AiOutlineHeart:<AiFillHeart className={Valor} onClick={() => {
-             setValor("vermelho")
-              if (Valor === "vermelho"){ setValor("BsHeart")}
-            }}  />, 
+          AiOutlineHeart:<AiFillHeart  />, 
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
           comentario:"./image/respondeai.png", coment:"Curtido por",
          coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",}, 
          {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,
-          AiOutlineHeart:<AiFillHeart className={Valor} onClick={() => {
-             setValor("vermelho")
-              if (Valor === "vermelho"){ setValor("BsHeart")}
-            }}  />, 
+          AiOutlineHeart:<AiFillHeart  />, 
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
           comentario:"./image/respondeai.png", coment:"Curtido por",
          coment1:"respondeai", coment2:"coment2", coment3:"outras 101.523 pessoas",}, 
