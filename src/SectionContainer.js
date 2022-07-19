@@ -5,8 +5,11 @@ import {HiOutlineBookmark} from 'react-icons/hi';
 import {AiFillHeart, } from 'react-icons/ai';
 
 
-function Section  (props) {  
-    
+function Section  ({img, legenda, icon,
+     gato, MdOutlineChatBubbleOutline,
+     IoMdPaperPlane, comentario,
+      coment, coment1, coment2, coment3}) {  
+      
     const [Valor, setValor] = React.useState("BsHeart")
     return (
     
@@ -15,18 +18,18 @@ function Section  (props) {
 
     <div class="section-buttom-top">
         <div class="section-buttom-esquerda">
-           <img src={props.img} />
-            <p class="gato">{props.legenda}</p>
+           <img src={img} />
+            <p class="gato">{legenda}</p>
         </div>
         <div class="section-buttom-direita">
-            {props.icon}
+            {icon}
         </div>
     </div>
     <div class="section-buttom-base" onClick={() => {
           setValor("vermelho")
           if (Valor === "vermelho"){ setValor("BsHeart")}
          }}>
-        <img class="foto-gato"  src={props.gato}/>
+        <img class="foto-gato"  src={gato}/>
     </div>
 
     <div class="base-foto-1">
@@ -38,14 +41,14 @@ function Section  (props) {
              setValor("vermelho")
               if (Valor === "vermelho"){ setValor("BsHeart")}
             }} />
-               {props.MdOutlineChatBubbleOutline}  
-               {props.IoMdPaperPlane}  
+               {MdOutlineChatBubbleOutline}  
+               {IoMdPaperPlane}  
                  
             </div>
 
             <div class="comentario">
-                <img src={props.comentario}  />
-                <p>{props.coment} <strong>{props.coment1}</strong> {props.coment2} <strong> {props.coment3}</strong>
+                <img src={comentario}  />
+                <p>{coment} <strong>{coment1}</strong> {coment2} <strong> {coment3}</strong>
                 </p>
             </div>
         </div>
@@ -71,7 +74,7 @@ function SectionContainer (){
           AiOutlineHeart:<AiFillHeart  />, 
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
           comentario:"./image/respondeai.png", coment:"Curtido por",
-         coment1:"gatosPets", coment2:"e", coment3:"outras 101.523 pessoas",}, 
+         coment1:"gatosPets", coment2:"gatosPets", coment3:"outras 101.523 pessoas",}, 
          {legenda: "meowed", img: "./image/meowed4.png", icon:  < ion-icon  name="ellipsis-horizontal" class="pontos"></ion-icon>, gato:  fotoo,
           AiOutlineHeart:<AiFillHeart  />, 
          MdOutlineChatBubbleOutline:<ion-icon name="chatbubble-outline"></ion-icon>, IoMdPaperPlane:<ion-icon name="paper-plane-outline"></ion-icon>,
